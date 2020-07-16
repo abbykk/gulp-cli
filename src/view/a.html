@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+        @@include('./../componet/header.html')
+    <div>
+        <img src="../image/LandingPage05.jpg" alt="">
+    </div>
+    <script>
+        (function(c,d){
+            var e=document.documentElement||document.body,
+            a="orientationchange" in window?"orientationchange":"resize",
+            b=function(){var f=e.clientWidth;e.style.fontSize=(f>=750)?"100px":100*(f/750)+"px"};
+            b();
+            c.addEventListener(a,b,false)
+        })(window);
+        (
+            function(){
+                console.log("1222sdsd")
+                var a = '{"a":"1213123100002","a1":121312312}"';
+                console.log(a.a1)
+            }
+        )()
+    </script>
+</body>
+</html>
